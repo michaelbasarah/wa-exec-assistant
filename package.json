@@ -1,0 +1,15 @@
+{
+  "name": "wa-exec-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A WhatsApp AI secretary: Google Calendar, tasks, notes, reminders and a sales log in a Google Sheet.",
+  "license": "MIT",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning --env-file-if-exists=.env src/server.mjs",
+    "sim": "node --env-file-if-exists=.env scripts/sim.mjs",
+    "demo": "node --disable-warning=ExperimentalWarning scripts/demo.mjs",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.mjs"
+  }
+}
